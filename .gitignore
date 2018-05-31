@@ -39,3 +39,6 @@ $RECYCLE.BIN/
 .vscode/*
 .history
 
+# npm
+node_modules/
+
