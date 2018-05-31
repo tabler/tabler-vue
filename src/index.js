@@ -1,11 +1,16 @@
-import * as components from './components/index'
+import {components} from './components/index'
+import directives from './directives/index'
 
 const TablerVuePlugin = {
 
     install: function (Vue) {
-        // register components
         for (let component in components) {
-            Vue.component(component.name, component)
+            // register components
+            Vue.component(components[component].name, components[component])
+        }
+
+        for (let directive in directives) {
+            Vue.directive(directive, directives[directive])
         }
     }
 
