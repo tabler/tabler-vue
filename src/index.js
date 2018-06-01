@@ -12,8 +12,10 @@ const TablerVuePlugin = {
         for (let directive in directives) {
             Vue.directive(directive, directives[directive])
         }
-    }
+    },
 
+    ...components,
+    ...directives
 };
 
 // vueUse(TablerVuePlugin)

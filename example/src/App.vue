@@ -2,12 +2,12 @@
   <div id="app">
     <site-header :imageUrl="logoImage">
     </site-header>
+    <site-nav></site-nav>
   </div>
 </template>
 
 <script>
 import Logo from './assets/demo/brand/tabler.svg'
-
 export default {
   name: 'App',
   computed: {
