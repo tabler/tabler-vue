@@ -1,3 +1,4 @@
+import * as Alert from './Alert/index'
 import Button from './Button'
 import * as Card from './Card/index'
 import Container from './Container'
@@ -10,6 +11,7 @@ import * as Site from './Site/index'
 import StatsCard from './StatsCard.vue'
 
 export const components = {
+    ...Alert,
     Button,
     ...Card,
     Container,

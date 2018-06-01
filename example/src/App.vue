@@ -16,6 +16,8 @@
         </grid-col>
 
         <grid-col lg="6">
+          <alert type="primary">Are you in trouble? <alert-link to="/documentation" label="Read our documentation"/> with code samples.</alert>
+
           <grid-row>
             <grid-col sm="6">
               <card title="Chart title"></card>
@@ -44,7 +46,7 @@ export default {
       {label: 'New Replies', movement: 9, total: 7},
       {label: 'Followers', movement: 3, total: '27.3K'},
       {label: 'Daily Earnings', movement: -2, total: '$95'},
-      {label: 'Daily Earnings', movement: -1, total: 621}
+      {label: 'Products', movement: -1, total: 621}
     ],
     process: [
       {label: 'New feedback', movement: 6, total: 62},
