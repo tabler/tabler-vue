@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Vue.js implementation of the premium and Open Source dashboard template with responsive and high quality UI. For Free!",
   "main": "index.js",
-  "repository": "https://github.com/tabler/tabler-vue.git",
+  "repository": "https://github.com/isneezy/tabler-vue.git",
   "author": "Ivan Vilanculo",
   "license": "MIT",
-
   "scripts": {
     "build:lib": "rollup -c",
     "build:example": "cd example && yarn install && yarn build",
@@ -14,24 +13,23 @@
     "dev": "concurrently --kill-others \"yarn dev:lib\" \"yarn dev:example\"",
     "dev:lib": "yarn copytablercsstodis && rollup -c -w",
     "dev:example": "cd example && yarn install && yarn dev",
-    "copytablercsstodis": "mkdir -p dist && cp -r node_modules/tabler-ui/dist/assets/css node_modules/tabler-ui/dist/assets/fonts node_modules/tabler-ui/dist/assets/images dist/"
+    "copytablercsstodis": "mkdir -p dist && cp -r node_modules/tabler-ui/dist/assets/css node_modules/tabler-ui/dist/assets/fonts node_modules/tabler-ui/dist/assets/images dist/",
+    "deploy": "yarn build:example && gh-pages -d example/dist"
   },
-
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "concurrently": "^3.5.1",
+    "gh-pages": "^1.1.0",
     "rollup": "^0.59.4",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-vue": "^4.2.0",
     "vue-template-compiler": "^2.5.16"
   },
-
   "peerDependencies": {
     "vue": "^2.5.16"
   },
-
   "dependencies": {
     "tabler-ui": "^0.0.32",
     "vue-popperjs": "^1.3.4"

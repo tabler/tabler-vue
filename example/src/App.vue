@@ -6,8 +6,25 @@
 
     <page title="Dashboard">
       <grid-row cards>
+
         <grid-col :key="stat.label" v-for="stat in stats" xs="6" sm="4" lg="2">
           <stats-card :movement="stat.movement" :total="stat.total" :label="stat.label"/>
+        </grid-col>
+
+        <grid-col lg="6">
+          <card title="Development Activity"></card>
+        </grid-col>
+
+        <grid-col lg="6">
+          <grid-row>
+            <grid-col sm="6">
+              <card title="Chart title"></card>
+            </grid-col>
+
+            <grid-col sm="6">
+              <card title="Chart title"></card>
+            </grid-col>
+          </grid-row>
         </grid-col>
       </grid-row>
     </page>
@@ -27,7 +44,11 @@ export default {
       {label: 'New Replies', movement: 9, total: 7},
       {label: 'Followers', movement: 3, total: '27.3K'},
       {label: 'Daily Earnings', movement: -2, total: '$95'},
-      {label: 'Daily Earnings', movement: -1, total: 621},
+      {label: 'Daily Earnings', movement: -1, total: 621}
+    ],
+    process: [
+      {label: 'New feedback', movement: 6, total: 62},
+      {label: 'Today profit', movement: -3, total: '$652'}
     ]
   }),
   computed: {
