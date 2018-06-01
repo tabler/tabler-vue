@@ -23,9 +23,9 @@
 
         computed: {
             movementClassName() {
+                const color = !this.movement ? "yellow" : this.movement > 0 ? "green" : "red"
                 const className = {}
-                className['text-green'] = this.movement >= 0
-                className['text-danger'] = this.movement < 0
+                className[`text-${color}`] = true
                 return className
             },
 
