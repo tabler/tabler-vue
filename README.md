@@ -13,8 +13,22 @@ TODO: Describe the installation process
 TODO: Write usage instructions
 
 ## Contributing
-
 Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+The package is made up of 2 main folders:
+- /src
+- /example is a [vue-cli webpack](https://github.com/vuejs/vue-cli) based demo website
+
+To setup and run a local copy:
+1. Clone this repo with `git clone https://github.com/tabler/tabler-vue.git`
+2. Run `yarn install` in root folder
+3. Run `Yarn dev`
+
+You should now be up and running with live browser reloading of the example website while you work
+on Tabler Vue components in the /src folder.
+
+When you're done working on your changes, submit a PR with the details and include a 
+screenshot if you've changed anything visually.
 
 ## History
 
