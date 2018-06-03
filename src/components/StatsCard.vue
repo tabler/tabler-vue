@@ -18,7 +18,7 @@
         props: {
             movement: {type: Number, required: true},
             label: {type: String, required: true},
-            total: {type: Number, required: true}
+            total: {type: String|Number, required: true}
         },
 
         computed: {
