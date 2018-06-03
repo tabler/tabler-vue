@@ -11,6 +11,7 @@ import ProgressCard from './ProgressCard'
 import * as Site from './Site'
 import StampCard from './StampCard'
 import StatsCard from './StatsCard'
+import * as Table from './Table'
 
 export const components = {
     ...Alert,
@@ -25,5 +26,6 @@ export const components = {
     ProgressCard,
     ...Site,
     StampCard,
-    StatsCard
+    StatsCard,
+    ...Table
 }

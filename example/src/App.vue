@@ -12,7 +12,49 @@
         </grid-col>
 
         <grid-col lg="6">
-          <card title="Development Activity"></card>
+          <card>
+            <card-header title="Development Activity"/>
+            <t-table cards vertical-align="center">
+              <table-head>
+                <table-row>
+                  <table-cel colspan="2" header>User</table-cel>
+                  <table-cel header>Commit</table-cel>
+                  <table-cel header>Date</table-cel>
+                  <table-cel header></table-cel>
+                </table-row>
+              </table-head>
+              <table-body>
+                <table-row>
+                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/9.jpg)"></span></table-cel>
+                  <table-cel>Ronald Bardley</table-cel>
+                  <table-cel>Initial commit</table-cel>
+                  <table-cel class="text-norwap">May 6, 2018</table-cel>
+                  <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
+                </table-row>
+                <table-row>
+                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/female/1.jpg)"></span></table-cel>
+                  <table-cel>Beverly Armstrong</table-cel>
+                  <table-cel>Left sidebar adjustments</table-cel>
+                  <table-cel class="text-norwap">Apirl 15, 2018</table-cel>
+                  <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
+                </table-row>
+                <table-row>
+                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></table-cel>
+                  <table-cel>Boddy Knight</table-cel>
+                  <table-cel>Topbar dropdown style</table-cel>
+                  <table-cel class="text-norwap">Apirl 8, 2018</table-cel>
+                  <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
+                </table-row>
+                <table-row>
+                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></table-cel>
+                  <table-cel>Sharon Wells</table-cel>
+                  <table-cel>Fixes #625</table-cel>
+                  <table-cel class="text-norwap">Apirl 9, 2018</table-cel>
+                  <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
+                </table-row>
+              </table-body>
+            </t-table>
+          </card>
         </grid-col>
 
         <grid-col lg="6">
@@ -50,8 +92,75 @@
         </grid-col>
       </grid-row>
 
-      <grid-row>
+      <grid-row cards>
+        <grid-col xs="12">
+          <card>
+            <t-table responsive hover cards outline vertical-align="center" className="text-nowrap">
+              <table-head>
+                <table-row>
+                  <table-cel header class="text-center w-1"></table-cel>
+                  <table-cel header>User</table-cel>
+                  <table-cel header>Usage</table-cel>
+                  <table-cel header class="text-center">Payment</table-cel>
+                  <table-cel header>Activity</table-cel>
+                  <table-cel header class="text-center">Satisfaction</table-cel>
+                  <table-cel header class="text-center"></table-cel>
+                </table-row>
+              </table-head>
+              <table-body>
+                <table-row>
+                  <table-cel class="text-center">
+                    <div class="avatar d-block" style="background-image: url(demo/faces/female/26.jpg)">
+                      <span class="avatar-status bg-green"></span>
+                    </div>
+                  </table-cel>
+                  <table-cel>
+                    <div>Elizabeth Martin</div>
+                    <div class="small text-muted">Registered: Mar 19, 2018</div>
+                  </table-cel>
 
+                  <table-cel>
+                    <div class="clearfix">
+                      <div class="float-left">
+                        <strong>42%</strong>
+                      </div>
+                      <div class="float-right">
+                        <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
+                      </div>
+                    </div>
+                    <div class="progress progress-xs">
+                      <div class="progress-bar bg-yellow" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </table-cel>
+
+                  <table-cel class="text-center">
+                    <i class="payment payment-visa"></i>
+                  </table-cel>
+
+                  <table-cel>
+                    <div class="small text-muted">Last login</div>
+                    <div>4 minutes ago</div>
+                  </table-cel>
+
+                  <table-cel class="text-center">
+                    <div class="mx-auto chart-circle chart-circle-xs" data-value="0.42" data-thickness="3" data-color="blue">
+                      <div class="chart-circle-value">42%</div>
+                    </div>
+                  </table-cel>
+
+                  <table-cel>
+                    <dropdown position="right" class="item-action">
+                      <template slot="dropdown-toggle">
+                        <a href="javascript:void(0)" class="icon"><i class="fe fe-more-vertical"></i></a>
+                      </template>
+                      <dropdown-menu-item label="Hello"/>
+                    </dropdown>
+                  </table-cel>
+                </table-row>
+              </table-body>
+            </t-table>
+          </card>
+        </grid-col>
       </grid-row>
     </page>
 
