@@ -7,6 +7,7 @@ import * as Grid from './Grid/index'
 import * as Nav from './Nav/index'
 import Notifications from './Notifications.vue'
 import * as Page from './Page/index'
+import ProgressCard from './ProgressCard.vue'
 import * as Site from './Site/index'
 import StatsCard from './StatsCard.vue'
 
@@ -20,6 +21,7 @@ export const components = {
     ...Nav,
     Notifications,
     ...Page,
+    ProgressCard,
     ...Site,
     StatsCard
 }

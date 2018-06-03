@@ -26,6 +26,13 @@
             <grid-col sm="6">
               <card title="Chart title"></card>
             </grid-col>
+
+            <grid-col sm="6">
+              <progress-card title="New feedback" total="62" :progress="68" progress-color="red"/>
+            </grid-col>
+            <grid-col sm="6">
+              <progress-card title="Today profit" total="$652" :progress="84"/>
+            </grid-col>
           </grid-row>
         </grid-col>
       </grid-row>
