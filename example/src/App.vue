@@ -49,6 +49,10 @@
           <stamp-card color="yellow" icon="message-square" footer="16 waiting"><a href="#">132 <small>Comments</small></a></stamp-card>
         </grid-col>
       </grid-row>
+
+      <grid-row>
+
+      </grid-row>
     </page>
 
   </site-wrapper>

@@ -1,4 +1,4 @@
-import Alert from './Alert.vue'
+import Alert from './Alert'
 import AlertLink from './AlertLink'
 export {
     Alert,

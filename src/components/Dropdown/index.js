@@ -1,7 +1,7 @@
-import Dropdown from './Dropdown.vue'
+import Dropdown from './Dropdown'
 import DropdownDivider from './DropdownDivider'
-import DropdownMenu from './DropdownMenu.vue'
-import DropdownMenuItem from './DropdownMenuItem.vue'
+import DropdownMenu from './DropdownMenu'
+import DropdownMenuItem from './DropdownMenuItem'
 
 export {
     Dropdown,

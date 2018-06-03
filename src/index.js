@@ -1,5 +1,5 @@
-import {components} from './components/index'
-import directives from './directives/index'
+import {components} from './components'
+import directives from './directives'
 
 const TablerVuePlugin = {
 

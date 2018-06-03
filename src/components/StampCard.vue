@@ -13,6 +13,7 @@
 </template>
 
 <script>
+    import Card from './Card/Card'
     export default {
         name: "stamp-card",
         props: {

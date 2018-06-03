@@ -24,6 +24,7 @@
     "gh-pages": "^1.1.0",
     "rollup": "^0.59.4",
     "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-vue": "^4.2.0",
     "vue-template-compiler": "^2.5.16"
   },

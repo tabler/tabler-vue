@@ -1,4 +1,4 @@
-import Nav from './Nav.vue'
+import Nav from './Nav'
 
 export {
     Nav

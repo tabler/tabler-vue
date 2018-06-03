@@ -1,6 +1,6 @@
-import Page from './Page.vue'
-import PageHeader from './PageHeader.vue'
-import PageWrapper from './PageWrapper.vue'
+import Page from './Page'
+import PageHeader from './PageHeader'
+import PageWrapper from './PageWrapper'
 
 export {
     Page,

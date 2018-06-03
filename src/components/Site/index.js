@@ -1,7 +1,7 @@
-import SiteHeader from './SiteHeader.vue'
-import SiteLogo from  './SiteLogo.vue'
-import SiteNav from './SiteNav.vue'
-import SiteWrapper from './SiteWrapper.vue'
+import SiteHeader from './SiteHeader'
+import SiteLogo from  './SiteLogo'
+import SiteNav from './SiteNav'
+import SiteWrapper from './SiteWrapper'
 
 export {
     SiteHeader,
