@@ -1,13 +1,17 @@
 export default {
     name: 'tag-wrapper',
+    functional: true,
     props: {
         tag: {default: 'div', types: String}
     },
 
-    render(h) {
+    render(h, {children, props, data}) {
         return h(
-            this.tag,
-            this.$slots.default
+            props.tag,
+            {
+                class: data.staticClass
+            },
+            children
         )
     }
 }
