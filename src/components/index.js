@@ -9,6 +9,7 @@ import Notifications from './Notifications.vue'
 import * as Page from './Page/index'
 import ProgressCard from './ProgressCard.vue'
 import * as Site from './Site/index'
+import StampCard from './StampCard.vue'
 import StatsCard from './StatsCard.vue'
 
 export const components = {
@@ -23,5 +24,6 @@ export const components = {
     ...Page,
     ProgressCard,
     ...Site,
+    StampCard,
     StatsCard
 }

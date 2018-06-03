@@ -35,6 +35,19 @@
             </grid-col>
           </grid-row>
         </grid-col>
+
+        <grid-col sm="6" lg="3">
+          <stamp-card icon="dollar-sign" footer="12 waiting payments"><a href="#">132 <small>Sales</small></a></stamp-card>
+        </grid-col>
+        <grid-col sm="6" lg="3">
+          <stamp-card color="green" icon="shopping-cart" footer="32 shipped"><a href="#">78 <small>Orders</small></a></stamp-card>
+        </grid-col>
+        <grid-col sm="6" lg="3">
+          <stamp-card color="red" icon="users" footer="163 registered today"><a href="#">1352 <small>Members</small></a></stamp-card>
+        </grid-col>
+        <grid-col sm="6" lg="3">
+          <stamp-card color="yellow" icon="message-square" footer="16 waiting"><a href="#">132 <small>Comments</small></a></stamp-card>
+        </grid-col>
       </grid-row>
     </page>
 
