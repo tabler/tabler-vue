@@ -1,4 +1,5 @@
 import * as Alert from './Alert'
+import Avatar from './Avatar'
 import Button from './Button'
 import * as Card from './Card'
 import Container from './Container'
@@ -15,6 +16,7 @@ import * as Table from './Table'
 
 export const components = {
     ...Alert,
+    Avatar,
     Button,
     ...Card,
     Container,

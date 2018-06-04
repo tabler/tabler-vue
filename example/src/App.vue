@@ -25,28 +25,28 @@
               </table-head>
               <table-body>
                 <table-row>
-                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/9.jpg)"></span></table-cel>
+                  <table-cel class="w-1"><avatar image-url="/static/demo/faces/male/9.jpg"/></table-cel>
                   <table-cel>Ronald Bardley</table-cel>
                   <table-cel>Initial commit</table-cel>
                   <table-cel class="text-norwap">May 6, 2018</table-cel>
                   <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
                 </table-row>
                 <table-row>
-                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/female/1.jpg)"></span></table-cel>
+                  <table-cel class="w-1"><avatar image-url="/static/demo/faces/female/1.jpg"/></table-cel>
                   <table-cel>Beverly Armstrong</table-cel>
                   <table-cel>Left sidebar adjustments</table-cel>
                   <table-cel class="text-norwap">Apirl 15, 2018</table-cel>
                   <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
                 </table-row>
                 <table-row>
-                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></table-cel>
+                  <table-cel class="w-1"><avatar image-url="/static/demo/faces/male/4.jpg"/></table-cel>
                   <table-cel>Boddy Knight</table-cel>
                   <table-cel>Topbar dropdown style</table-cel>
                   <table-cel class="text-norwap">Apirl 8, 2018</table-cel>
                   <table-cel class="w-1"><a href="#" class="icon"><i class="fe fe-trash"></i></a></table-cel>
                 </table-row>
                 <table-row>
-                  <table-cel class="w-1"><span class="avatar" style="background-image: url(./demo/faces/male/4.jpg)"></span></table-cel>
+                  <table-cel class="w-1"><avatar image-url="/static/demo/faces/female/11.jpg"/></table-cel>
                   <table-cel>Sharon Wells</table-cel>
                   <table-cel>Fixes #625</table-cel>
                   <table-cel class="text-norwap">Apirl 9, 2018</table-cel>
@@ -110,9 +110,7 @@
               <table-body>
                 <table-row>
                   <table-cel class="text-center">
-                    <div class="avatar d-block" style="background-image: url(demo/faces/female/26.jpg)">
-                      <span class="avatar-status bg-green"></span>
-                    </div>
+                    <avatar image-url="/static/demo/faces/female/26.jpg" status-color="green"/>
                   </table-cel>
                   <table-cel>
                     <div>Elizabeth Martin</div>
