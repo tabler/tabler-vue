@@ -126,9 +126,7 @@
                         <small class="text-muted">Jun 11, 2015 - Jul 10, 2015</small>
                       </div>
                     </div>
-                    <div class="progress progress-xs">
-                      <div class="progress-bar bg-yellow" role="progressbar" style="width: 42%" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
+                    <progress-bar size="xs" color="yellow" :progress="42" />
                   </table-cel>
 
                   <table-cel class="text-center">

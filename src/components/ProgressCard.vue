@@ -3,9 +3,7 @@
         <card-body class="text-center">
             <div class="h5">{{ title }}</div>
             <div class="display-4 font-weight-bold mb-4">{{ total }}</div>
-            <div class="progress progress-sm">
-                <div :class="`progress-bar bg-${progressColor}`" :style="progressStyle"></div>
-            </div>
+            <progress-bar size="sm" :color="progressColor" :progress="progress"/>
         </card-body>
     </card>
 </template>
@@ -13,6 +11,7 @@
 <script>
     import Card from "./Card/Card.vue";
     import CardBody from "./Card/CardBody.vue";
+    import ProgressBar from './ProgressBar'
 
     export default {
         name: "progress-card",
@@ -22,16 +21,10 @@
             progress: {required: true, type: Number},
             progressColor: {default: 'green', type: String}
         },
-
-        computed: {
-            progressStyle() {
-                return {width: `${this.progress}%`}
-            }
-        },
-
         components: {
             CardBody,
-            Card
+            Card,
+            ProgressBar
         }
     }
 </script>
