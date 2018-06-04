@@ -39,3 +39,10 @@ $RECYCLE.BIN/
 .vscode/*
 .history
 
+# npm
+node_modules/
+
+
+yarn-error\.log
+
+dist/
