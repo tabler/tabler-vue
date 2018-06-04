@@ -1,1 +1,1 @@
-git log --format="%aN <%aE>" > AUTHORS.md
+git log --format="%aN <%aE>" | sort -f | uniq > AUTHORS.md
