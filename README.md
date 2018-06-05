@@ -22,7 +22,7 @@ The package is made up of 2 main folders:
 To setup and run a local copy:
 1. Clone this repo with `git clone https://github.com/tabler/tabler-vue.git`
 2. Run `yarn install` in root folder
-3. Run `Yarn dev`
+3. Run `yarn dev`
 
 You should now be up and running with live browser reloading of the example website while you work
 on Tabler Vue components in the /src folder.
