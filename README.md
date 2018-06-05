@@ -1,7 +1,7 @@
 # tabler-vue
 
 *tabler-vue* is a collection of Vue.js components for implementing Tabler themed elements
-elements in your project. [Tabler](https://tabler.github.io) is a free and open-source
+in your project. [Tabler](https://tabler.github.io) is a free and open-source
 HTML Dashboard UI Kit built on Bootstrap 4.
 
 ## Installation
