@@ -7,7 +7,7 @@ export default {
         size: {default: '', type: String},
 
         /**
-         * percentage of the progress (0 - 100)
+         * Percentage of the progress (0 - 100)
          */
         progress: {default: 0, type: Number},
 

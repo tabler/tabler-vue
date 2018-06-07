@@ -37,7 +37,7 @@ export default {
         },
 
         /**
-         * returns true if status is defined and otherwise false
+         * Returns true if status is defined and otherwise false
          * @returns {boolean}
          */
         hasStatus() {

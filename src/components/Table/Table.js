@@ -7,7 +7,7 @@ export default {
         responsive: {default: true},
 
         /**
-         * Maks if table should contain .table-hover class
+         * Marks if table should contain .table-hover class
          */
         hover: {default: false},
 
@@ -22,7 +22,7 @@ export default {
         outline: {default: false},
 
         /**
-         * optimise table for display cards
+         * Optimise table for display cards
          */
         cards: {default: false},
 
@@ -33,15 +33,15 @@ export default {
         verticalAlign: {type: String},
 
         /**
-         * classes for the table element
-         * it can be Object or String
+         * Classes for the table element
+         * It can be Object or String
          */
         className: {}
     },
 
     render(createElement) {
         /**
-         * conditionally wraps table element inside .table-responsive div container
+         * Conditionally wraps table element inside .table-responsive div container
          * based on the responsive property
          */
         if(!!this.responsive) {
@@ -57,7 +57,7 @@ export default {
 
     methods: {
         /**
-         * Creates table html element with proper classes
+         * Creates an html table element with proper classes
          * @param createElementFn createElement function from render function
          * @returns {*}
          */
@@ -72,7 +72,7 @@ export default {
 
     computed: {
         /**
-         * returns table element classes
+         * Returns table element classes
          * @returns Object
          */
         tableClassName () {

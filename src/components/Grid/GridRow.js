@@ -2,7 +2,7 @@ export default {
     name: 'grid-row',
     props: {
         /**
-         * Mark as true if this row contais cards
+         * Mark as true if this row contains cards
          */
         cards: {default: false, types: Boolean}
     },
