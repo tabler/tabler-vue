@@ -2,7 +2,7 @@
   "name": "tabler-vue",
   "version": "1.0.0",
   "description": "Vue.js implementation of the premium and Open Source dashboard template with responsive and high quality UI. For Free!",
-  "main": "index.js",
+  "main": "/dist/vue-tabler.js",
   "repository": "https://github.com/tabler/tabler-vue.git",
   "author": "Ivan Vilanculo",
   "license": "MIT",
