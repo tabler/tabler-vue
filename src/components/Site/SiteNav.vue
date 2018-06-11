@@ -1,5 +1,5 @@
 <template>
-    <div class="header collapse d-lg-flex p-0">
+    <div class="header collapse d-lg-flex p-0" :class="{show: !collapsed}">
         <container>
             <grid-row class="align-items-center">
                 <grid-col lg="3" class="ml-auto">
@@ -12,7 +12,7 @@
                     <!--</form>-->
                 </grid-col>
 
-                <grid-col class="order-lg-first">
+                <grid-col lg class="order-lg-first">
                     <t-nav tabbed class="border-0 flex-column flex-lg-row">
                         <slot></slot>
                     </t-nav>
@@ -28,6 +28,9 @@
 
     export default {
         name: "site-nav",
+        props: {
+          collapsed: {default: true, type: Boolean}
+        },
         components: {
             DropdownMenuItem,
             NavItem

@@ -1,15 +1,15 @@
 <template>
     <site-wrapper>
-        <site-header imageUrl="/static/demo/brand/tabler.svg">
+        <site-header @toggle-menu="toggleMenu" imageUrl="/static/demo/brand/tabler.svg">
             <div class="nav-item">
                 <t-button :outline="true" size="sm" href="https://github.com/tabler/tabler-vue"
                           target="_blank">Source code
                 </t-button>
             </div>
             <notifications/>
-            <account-dropdown imageUrl="/static/demo/faces/female/25.jpg"/>
+            <account-dropdown imageUrl="/static/demo/faces/female/25.jpg" title="Jane Pearson" subtitle="Administrator" />
         </site-header>
-        <site-nav>
+        <site-nav :collapsed="menuCollapsed">
             <nav-item to="/" icon="home" label="Home"/>
             <nav-item to="/interface" icon="box" label="Interface">
                 <dropdown-menu-item label="Cards design"/>
@@ -47,7 +47,15 @@
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  data: () => ({
+    menuCollapsed: true
+  }),
+  methods: {
+    toggleMenu() {
+      this.menuCollapsed = !this.menuCollapsed
+    }
+  }
 }
 </script>
 
