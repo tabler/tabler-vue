@@ -1,4 +1,5 @@
 import * as Alert from './Alert'
+import AccountDropdown from './AccountDropdown'
 import Avatar from './Avatar'
 import Button from './Button'
 import * as Card from './Card'
@@ -17,6 +18,7 @@ import * as Table from './Table'
 
 export const components = {
     ...Alert,
+    AccountDropdown,
     Avatar,
     Button,
     ...Card,

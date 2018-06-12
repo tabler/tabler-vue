@@ -14,6 +14,6 @@ export default {
 </script>
 
 <style>
-  @import "../../dist/css/dashboard.css";
-  /**./assets/logo.png**/
+    @import "../../dist/css/dashboard.css";
+    /**./assets/logo.png**/
 </style>

@@ -10,12 +10,12 @@ export default {
     template: `<div :class="className"><slot/></div>`,
     computed: {
         className() {
-            const className = {col: true}
-            className[`col-${this.xs}`] = this.xs
-            className[`col-${this.sm}`] = this.sm
-            className[`col-${this.md}`] = this.md
-            className[`col-lg-${this.lg}`] = this.lg
-            className[`col-lg-${this.xl}`] = this.xl
+            const className = {}
+            className[`col-xs${this.xs ? '-' + this.xs : '' }`] = this.xs !== 0
+            className[`col-sm${this.sm ? '-' + this.sm : '' }`] = this.sm !== 0
+            className[`col-md${this.md ? '-' + this.md : '' }`] = this.md !== 0
+            className[`col-lg${this.lg ? '-' + this.lg : '' }`] = this.lg !== 0
+            className[`col-xl${this.xl ? '-' + this.xl : '' }`] = this.xl !== 0
             return className
         }
     }
