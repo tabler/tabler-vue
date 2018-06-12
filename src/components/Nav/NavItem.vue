@@ -1,6 +1,9 @@
 <template>
     <tag-wrapper :tag="tag" class="nav-item">
-        <a v-click-out-side="hideDropdown" @click="onClick" :class="className"><i v-if="icon" :class="iconClassName"></i> {{ label }}</a>
+        <a v-click-out-side="hideDropdown" @click="onClick" :class="className">
+            <icon v-if="icon" :icon="icon" :prefix="iconPrefix"/>
+            {{ label }}
+        </a>
         <dropdown-menu :show="dropdownVisible">
             <slot></slot>
         </dropdown-menu>

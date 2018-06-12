@@ -2,15 +2,18 @@
     <a href="#" class="dropdown-item">
         <slot>
             <span v-if="!!badge" class="float-right"><span :class="`badge badge-${type}`">{{ badge }}</span></span>
-            <i v-if="!!icon" :class="`${iconPrefix} ${iconPrefix}-${icon}`" class="dropdown-icon"></i>
+            <icon v-if="!!icon" :icon="icon" :prefix="iconPrefix" class="dropdown-icon"/>
             {{ label }}
         </slot>
     </a>
 </template>
 
 <script>
+    import Icon from '../Icon'
+
     export default {
-        name: "dropdown-menu-item",
+      components: {Icon},
+      name: "dropdown-menu-item",
         props: {
             icon: {default: false},
             iconPrefix: {default: 'fe'},

@@ -2,7 +2,7 @@
     <card class="p-3">
         <div class="d-flex align-items-center">
                     <span class="stamp stamp-md mr-3" :class="stampClassName">
-                      <i :class="`fe fe-${icon}`"></i>
+                      <icon :icon="icon"/>
                     </span>
             <div>
                 <h4 class="m-0"><slot>{{ header }}</slot></h4>
@@ -13,6 +13,7 @@
 </template>
 
 <script>
+    import Icon from './Icon'
     import Card from './Card/Card'
     export default {
         name: "stamp-card",
@@ -29,7 +30,12 @@
                 className[`bg-${this.color}`] = true
                 return className
             }
-        }
+        },
+
+      components: {
+            Card,
+            Icon
+      }
     }
 </script>
 
