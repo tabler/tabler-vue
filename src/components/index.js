@@ -6,6 +6,7 @@ import * as Card from './Card'
 import Container from './Container'
 import * as Dropdown from './Dropdown'
 import * as Grid from './Grid/index'
+import Icon from './Icon'
 import * as Nav from './Nav'
 import Notifications from './Notifications'
 import * as Page from './Page'
@@ -25,6 +26,7 @@ export const components = {
     Container,
     ...Dropdown,
     ...Grid,
+    Icon,
     ...Nav,
     Notifications,
     ...Page,
