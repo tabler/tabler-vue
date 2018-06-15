@@ -1,5 +1,5 @@
 <template>
-    <label class="form-label" :for="labelFor"><slot>{{ label }}</slot></label>
+    <label class="form-label" :for="labelFor"><slot>{{ label }} <span v-if="labelSmall" class="form-label-small">{{ labelSmall }}</span></slot></label>
 </template>
 
 <script>
@@ -8,6 +8,7 @@
     props: {
       labelFor: {default: '', type: String},
       label: {default: '', type: String},
+      labelSmall: {default: '', type: String},
     }
   }
 </script>

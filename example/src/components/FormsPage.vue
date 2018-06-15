@@ -7,14 +7,26 @@
                     <card-body>
                         <grid-row>
                             <grid-col md="6" lg="4">
-                                <form-grup>
+                                <form-group>
                                     <form-label>Static</form-label>
                                     <form-static-text value="Username"/>
-                                </form-grup>
-                                <form-grup>
+                                </form-group>
+                                <form-group>
                                     <form-label>Text</form-label>
                                     <form-input placeholder="Text.."/>
-                                </form-grup>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Disabled</form-label>
+                                    <form-input disabled placeholder="Well, she turned me into a newt."/>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Readonly</form-label>
+                                    <form-input readonly placeholder="Well, how'd you become king, then?" type="text"/>
+                                </form-group>
+                                <form-group>
+                                    <form-label label="Textarea" label-small="56/100"/>
+                                    <form-input readonly placeholder="Well, how'd you become king, then?" type="text"/>
+                                </form-group>
                             </grid-col>
                         </grid-row>
                     </card-body>
