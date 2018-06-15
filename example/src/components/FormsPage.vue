@@ -25,7 +25,7 @@
                                 </form-group>
                                 <form-group>
                                     <form-label label="Textarea" label-small="56/100"/>
-                                    <form-input readonly placeholder="Well, how'd you become king, then?" type="text"/>
+                                    <form-textarea rows="6" value="Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!" />
                                 </form-group>
                             </grid-col>
                         </grid-row>
