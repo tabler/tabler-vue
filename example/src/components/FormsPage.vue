@@ -86,6 +86,10 @@
                                         <form-checkbox name="example-inline-checkboxes" value="option3" label="Option 3" inline/>
                                     </div>
                                 </form-group>
+                                <form-group>
+                                    <form-label>Bootstrap's Custom File Input</form-label>
+                                    <form-file-input/>
+                                </form-group>
                             </grid-col>
                         </grid-row>
                     </card-body>
@@ -97,8 +101,7 @@
 
 <script>
   export default {
-    name: "forms-page",
-    data: () => ({check: []})
+    name: "forms-page"
   }
 </script>
 

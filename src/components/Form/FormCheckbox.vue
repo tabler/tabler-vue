@@ -12,6 +12,7 @@
 
 <script>
   import radioCheckMixin from '../../mixins/radioCheck'
+  import formElementMixin from '../../mixins/formElement'
   import {objectCompare} from '../../utils'
 
   export default {
@@ -32,11 +33,13 @@
             }
             return v !== this.inputValue
           })
+
         }
+        console.log(value, this.model)
         this.$emit('input', value)
       }
     },
-    mixins: [radioCheckMixin]
+    mixins: [radioCheckMixin, formElementMixin]
   }
 </script>
 

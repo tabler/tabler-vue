@@ -11,6 +11,7 @@
 
 <script>
   import checkboxMixin from '../../mixins/radioCheck'
+  import formElementsMixin from '../../mixins/formElement'
   import FormInput from './FormInput'
 
   export default {
@@ -20,7 +21,7 @@
         this.$emit('input', this.value)
       }
     },
-    mixins: [checkboxMixin],
+    mixins: [formElementsMixin, checkboxMixin],
     components: {FormInput}
   }
 </script>
