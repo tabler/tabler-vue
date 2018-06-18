@@ -35,13 +35,14 @@
                                 </form-group>
                                 <form-group>
                                     <form-label>Valid State</form-label>
-                                    <form-input placeholder="Valid State.."/>
-                                    <form-input class="mt-3" placeholder="Valid State.."/>
+                                    <form-input valid placeholder="Valid State.."/>
+                                    <form-input tick class="mt-3" value="Valid state"/>
                                 </form-group>
                                 <form-group>
                                     <form-label>Invalid State</form-label>
-                                    <form-input placeholder="Invalid State.."/>
-                                    <form-input class="mt-3" placeholder="Invalid State.."/>
+                                    <form-input invalid placeholder="Invalid State.."/>
+                                    <form-invalid-feedback feedback="Invalid feedback"/>
+                                    <form-input cross class="mt-3" value="Invalid state"/>
                                 </form-group>
                                 <form-group>
                                     <form-label>Country</form-label>
