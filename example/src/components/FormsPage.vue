@@ -28,6 +28,28 @@
                                     <form-textarea rows="6" value="Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!" />
                                 </form-group>
                             </grid-col>
+                            <grid-col md="6" lg="4">
+                                <form-group>
+                                    <form-label>Password</form-label>
+                                    <form-input value="Username" type="password" placeholder="Password.."/>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Valid State</form-label>
+                                    <form-input placeholder="Valid State.."/>
+                                    <form-input class="mt-3" placeholder="Valid State.."/>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Invalid State</form-label>
+                                    <form-input placeholder="Invalid State.."/>
+                                    <form-input class="mt-3" placeholder="Invalid State.."/>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Country</form-label>
+                                    <select class="form-control custom-select">
+                                        <option value="">Germany</option>
+                                    </select>
+                                </form-group>
+                            </grid-col>
                         </grid-row>
                     </card-body>
                 </card>
