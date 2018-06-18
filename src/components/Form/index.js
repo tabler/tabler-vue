@@ -5,6 +5,7 @@ import FormInput from './FormInput'
 import FormInvalidFeedback from './FormInvalidFeedback'
 import FormLabel from './FormLabel'
 import FormRadio from './FormRadio'
+import FormSelect from './FormSelect'
 import FormStaticText from './FormStaticText'
 import FormTextarea from './FormTextarea'
 
@@ -16,6 +17,7 @@ export {
   FormInvalidFeedback,
   FormLabel,
   FormRadio,
+  FormSelect,
   FormStaticText,
   FormTextarea
 }

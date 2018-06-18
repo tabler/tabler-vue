@@ -25,7 +25,8 @@
                                 </form-group>
                                 <form-group>
                                     <form-label label="Textarea" label-small="56/100"/>
-                                    <form-textarea rows="6" value="Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!" />
+                                    <form-textarea rows="6"
+                                                   value="Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!"/>
                                 </form-group>
                             </grid-col>
                             <grid-col md="6" lg="4">
@@ -90,6 +91,20 @@
                                     <form-label>Bootstrap's Custom File Input</form-label>
                                     <form-file-input/>
                                 </form-group>
+                                <form-group>
+                                    <form-label>Date of birth</form-label>
+                                    <grid-row class="gutters-xs">
+                                        <grid-col sm="5">
+                                            <form-select :options="months" value="June"/>
+                                        </grid-col>
+                                        <grid-col sm="3">
+                                            <form-select :options="days" value="20"/>
+                                        </grid-col>
+                                        <grid-col sm="4">
+                                            <form-select :options="years" value="1989"/>
+                                        </grid-col>
+                                    </grid-row>
+                                </form-group>
                             </grid-col>
                         </grid-row>
                     </card-body>
@@ -100,8 +115,15 @@
 </template>
 
 <script>
-  export default {
-    name: "forms-page"
+    import {months, days, years} from '../dummy'
+
+    export default {
+    name: "forms-page",
+    computed: {
+      months: () => months,
+      days: () => days,
+      years
+    }
   }
 </script>
 
