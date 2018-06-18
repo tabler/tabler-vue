@@ -64,9 +64,26 @@
                                 <form-group>
                                     <form-label>Inline Radios</form-label>
                                     <div class="custom-controls-stacked">
-                                        <form-radio checked name="example-radios" :value="1" label="Option 1" inline/>
-                                        <form-radio name="example-radios" :value="2" label="Option 2" inline/>
-                                        <form-radio name="example-radios" :value="3" label="Option 3" inline/>
+                                        <form-radio checked name="example-inline-radios" :value="1" label="Option 1" inline/>
+                                        <form-radio name="example-inline-radios" :value="2" label="Option 2" inline/>
+                                        <form-radio name="example-inline-radios" :value="3" label="Option 3" inline/>
+                                    </div>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Checkboxes</form-label>
+                                    <div class="custom-controls-stacked">
+                                        <form-checkbox checked name="example-radios" value="option1" label="Option 1"/>
+                                        <form-checkbox name="example-checkboxes" value="option2" label="Option 2"/>
+                                        <form-checkbox name="example-checkboxes" value="option3" disabled label="Option Disabled"/>
+                                        <form-checkbox name="example-checkboxes" checked value="option4" disabled label="Option Disabled Checked"/>
+                                    </div>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Inline Checkboxes</form-label>
+                                    <div class="custom-controls-stacked">
+                                        <form-checkbox checked name="example-inline-checkboxes" value="option1" label="Option 1" inline/>
+                                        <form-checkbox name="example-inline-checkboxes" value="option2" label="Option 2" inline/>
+                                        <form-checkbox name="example-inline-checkboxes" value="option3" label="Option 3" inline/>
                                     </div>
                                 </form-group>
                             </grid-col>
@@ -80,7 +97,8 @@
 
 <script>
   export default {
-    name: "forms-page"
+    name: "forms-page",
+    data: () => ({check: []})
   }
 </script>
 

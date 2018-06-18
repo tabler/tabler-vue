@@ -6,7 +6,7 @@
   export default {
     name: "form-label",
     props: {
-      labelFor: {default: '', type: String},
+      labelFor: {default: false, type: [Boolean, String]},
       label: {default: '', type: String},
       labelSmall: {default: '', type: String},
     }
