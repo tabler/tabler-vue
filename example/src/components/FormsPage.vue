@@ -17,11 +17,11 @@
                                 </form-group>
                                 <form-group>
                                     <form-label>Disabled</form-label>
-                                    <form-input disabled placeholder="Well, she turned me into a newt."/>
+                                    <form-input disabled value="Well, she turned me into a newt."/>
                                 </form-group>
                                 <form-group>
                                     <form-label>Readonly</form-label>
-                                    <form-input readonly placeholder="Well, how'd you become king, then?" type="text"/>
+                                    <form-input readonly value="Well, how'd you become king, then?" type="text"/>
                                 </form-group>
                                 <form-group>
                                     <form-label label="Textarea" label-small="56/100"/>
@@ -31,7 +31,7 @@
                             <grid-col md="6" lg="4">
                                 <form-group>
                                     <form-label>Password</form-label>
-                                    <form-input value="Username" type="password" placeholder="Password.."/>
+                                    <form-input type="password" placeholder="Password.."/>
                                 </form-group>
                                 <form-group>
                                     <form-label>Valid State</form-label>

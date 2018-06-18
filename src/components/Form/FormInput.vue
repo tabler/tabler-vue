@@ -1,23 +1,27 @@
 <template>
-    <input class="form-control" :class="className" v-model="internalValue" @input="onInput" >
+    <input class="form-control" :class="className" v-model="inputValue">
 </template>
 
 <script>
   export default {
     name: "form-input",
     props: {
-      value: {},
-      invalid: { default: false, type: Boolean },
-      valid: { default: false, type: Boolean },
+      value: {default: '', type: String},
+      invalid: {default: false, type: Boolean},
+      valid: {default: false, type: Boolean},
       tick: {default: false, type: Boolean},
       cross: {default: false, type: Boolean}
     },
 
-    data: () => ({
-      internalValue: null
-    }),
-
     computed: {
+      inputValue: {
+        get () {
+          return this.value
+        },
+        set (value) {
+          this.$emit('input', value)
+        }
+      },
       className () {
         const className = {}
         className['is-valid'] = this.valid
@@ -25,18 +29,6 @@
         className['is-invalid'] = this.invalid
         className['state-invalid'] = this.cross
         return className
-      }
-    },
-
-    methods: {
-      onInput() {
-        this.$emit('input', this.internalValue)
-      }
-    },
-
-    watch: {
-      value (value) {
-        this.internalValue = value
       }
     }
   }
