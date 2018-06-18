@@ -51,6 +51,25 @@
                                     </select>
                                 </form-group>
                             </grid-col>
+                            <grid-col md="6" lg="4">
+                                <form-group>
+                                    <form-label>Radios</form-label>
+                                    <div class="custom-controls-stacked">
+                                        <form-radio checked name="example-radios" :value="1" label="Option 1"/>
+                                        <form-radio name="example-radios" :value="2" label="Option 2"/>
+                                        <form-radio name="example-radios" :value="3" disabled label="Option Disabled"/>
+                                        <form-radio name="example-radios2" checked :value="4" disabled label="Option Disabled Checked"/>
+                                    </div>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Inline Radios</form-label>
+                                    <div class="custom-controls-stacked">
+                                        <form-radio checked name="example-radios" :value="1" label="Option 1" inline/>
+                                        <form-radio name="example-radios" :value="2" label="Option 2" inline/>
+                                        <form-radio name="example-radios" :value="3" label="Option 3" inline/>
+                                    </div>
+                                </form-group>
+                            </grid-col>
                         </grid-row>
                     </card-body>
                 </card>
