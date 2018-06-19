@@ -1,7 +1,9 @@
 import FormCheckbox from './FormCheckbox'
 import FormFileInput from './FormFileInput'
 import FormGroup from './FormGroup'
+import FormGroupAddon from './FormGroupAddon'
 import FormInput from './FormInput'
+import FormInputGroup from './FormInputGroup'
 import FormInvalidFeedback from './FormInvalidFeedback'
 import FormLabel from './FormLabel'
 import FormRadio from './FormRadio'
@@ -13,8 +15,10 @@ export {
   FormCheckbox,
   FormFileInput,
   FormGroup,
+  FormGroupAddon,
   FormInput,
   FormInvalidFeedback,
+  FormInputGroup,
   FormLabel,
   FormRadio,
   FormSelect,

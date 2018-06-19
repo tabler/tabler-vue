@@ -28,6 +28,25 @@
                                     <form-textarea rows="6"
                                                    value="Oh! Come and see the violence inherent in the system! Help, help, I'm being repressed! We shall say 'Ni' again to you, if you do not appease us. I'm not a witch. I'm not a witch. Camelot!"/>
                                 </form-group>
+                                <form-group>
+                                    <form-label>Input group</form-label>
+                                    <form-input-group>
+                                        <form-input placeholder="Username"/>
+                                        <form-group-addon append>
+                                            <t-button>Go!</t-button>
+                                        </form-group-addon>
+                                    </form-input-group>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Input group buttons</form-label>
+                                    <form-input-group>
+                                        <form-input placeholder="Username"/>
+                                        <form-group-addon append>
+                                            <t-button>Action</t-button>
+                                            <t-button><icon icon="chevron-down"/></t-button>
+                                        </form-group-addon>
+                                    </form-input-group>
+                                </form-group>
                             </grid-col>
                             <grid-col md="6" lg="4">
                                 <form-group>
@@ -104,6 +123,45 @@
                                             <form-select :options="years" value="1989"/>
                                         </grid-col>
                                     </grid-row>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Username</form-label>
+                                    <form-input-group>
+                                        <form-group-addon add-on="@"/>
+                                        <form-input placeholder="Username"/>
+                                    </form-input-group>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Your vanity URL</form-label>
+                                    <form-input-group>
+                                        <form-group-addon add-on="https://example.com/users/"/>
+                                        <form-input/>
+                                    </form-input-group>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Price</form-label>
+                                    <form-input-group>
+                                        <form-group-addon add-on="$"/>
+                                        <form-input/>
+                                        <form-group-addon add-on=".00" append/>
+                                    </form-input-group>
+                                </form-group>
+
+                                <form-group>
+                                    <form-label>Button input</form-label>
+                                    <form-input-group>
+                                        <form-group-addon>
+                                            <dropdown label="Action">
+                                                <dropdown-menu-item label="Action"/>
+                                                <dropdown-menu-item label="Another action"/>
+                                                <dropdown-menu-item label="Something else here"/>
+                                                <dropdown-divider/>
+                                                <dropdown-menu-item label="Separated link"/>
+                                            </dropdown>
+                                        </form-group-addon>
+                                        <form-input/>
+                                        <form-group-addon add-on=".00" append/>
+                                    </form-input-group>
                                 </form-group>
                             </grid-col>
                         </grid-row>
