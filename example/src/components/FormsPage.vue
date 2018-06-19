@@ -47,6 +47,26 @@
                                         </form-group-addon>
                                     </form-input-group>
                                 </form-group>
+                                <form-group>
+                                    <form-label>Icon input</form-label>
+                                    <form-input-icon icon="search" right class="mb-3">
+                                        <form-input placeholder="Search for..."/>
+                                    </form-input-icon>
+                                    <form-input-icon icon="user" class="mb-3">
+                                        <form-input placeholder="Username"/>
+                                    </form-input-icon>
+                                </form-group>
+                                <form-group>
+                                    <form-label>Separated input</form-label>
+                                    <grid-row class="gutters-xs">
+                                        <grid-col sm>
+                                            <form-input placeholder="Search for..."/>
+                                        </grid-col>
+                                        <grid-col class="col-auto">
+                                            <t-button><icon icon="search"></icon></t-button>
+                                        </grid-col>
+                                    </grid-row>
+                                </form-group>
                             </grid-col>
                             <grid-col md="6" lg="4">
                                 <form-group>
