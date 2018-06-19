@@ -2,6 +2,7 @@ import FormCheckbox from './FormCheckbox'
 import FormFileInput from './FormFileInput'
 import FormGroup from './FormGroup'
 import FormGroupAddon from './FormGroupAddon'
+import FormHelp from './FormHelp'
 import FormInput from './FormInput'
 import FormInputIcon from './FormInputIcon'
 import FormInputGroup from './FormInputGroup'
@@ -18,6 +19,7 @@ export {
   FormInputIcon,
   FormGroup,
   FormGroupAddon,
+  FormHelp,
   FormInput,
   FormInvalidFeedback,
   FormInputGroup,

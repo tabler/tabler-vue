@@ -67,6 +67,20 @@
                                         </grid-col>
                                     </grid-row>
                                 </form-group>
+                                <form-group>
+                                    <form-label>Zip Code</form-label>
+                                    <grid-row class="gutters-xs">
+                                        <grid-col sm>
+                                            <form-input placeholder="Search for..."/>
+                                        </grid-col>
+                                        <grid-col class="col-auto align-self-center">
+                                            <form-help>
+                                                <p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.</p>
+                                                <p class='mb-0'><a href=''>USP ZIP codes lookup tools</a></p>
+                                            </form-help>
+                                        </grid-col>
+                                    </grid-row>
+                                </form-group>
                             </grid-col>
                             <grid-col md="6" lg="4">
                                 <form-group>
