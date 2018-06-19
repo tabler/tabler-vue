@@ -37,7 +37,7 @@
         <dropdown-menu-item label="Empty page"/>
         <dropdown-menu-item label="RTL mode"/>
       </nav-item>
-      <nav-item to="/" icon="check-square" label="Forms"/>
+      <nav-item to="/forms" icon="check-square" label="Forms"/>
       <nav-item to="/" icon="image" label="Gallery"/>
       <nav-item to="/" icon="file-text" label="Documentation"/>
     </site-nav>

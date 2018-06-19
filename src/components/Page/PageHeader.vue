@@ -1,5 +1,5 @@
 <template>
-    <div class="page-header">
+    <div v-if="title.length" class="page-header">
         <h1 class="page-title">{{ title }}</h1>
     </div>
 </template>

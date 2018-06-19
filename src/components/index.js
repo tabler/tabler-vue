@@ -5,6 +5,7 @@ import Button from './Button'
 import * as Card from './Card'
 import Container from './Container'
 import * as Dropdown from './Dropdown'
+import * as Form from './Form'
 import * as Grid from './Grid/index'
 import Icon from './Icon'
 import * as Nav from './Nav'
@@ -25,6 +26,7 @@ export const components = {
     ...Card,
     Container,
     ...Dropdown,
+    ...Form,
     ...Grid,
     Icon,
     ...Nav,
