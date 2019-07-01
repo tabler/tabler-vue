@@ -18,7 +18,7 @@ channel for [bug reports](#bugs), [features requests](#features) and
 restrictions:
 
 * Please **do not** use the issue tracker for personal support requests (use
-  [StackOverflow](https://stackoverflow.com/).
+  [StackOverflow](https://stackoverflow.com/)).
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
